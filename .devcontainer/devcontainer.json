@@ -10,9 +10,12 @@
 		"context": ".."
 	},
 
-	// See https://containers.dev/implementors/features/
+	// See https://containers.dev/features
 	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"extensions": "containerapp"
+		}
     },
 
 	// Configure tool-specific properties.
@@ -23,8 +26,7 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"ms-azuretools.vscode-docker",
-				"ms-azuretools.vscode-bicep"
+				"ms-azuretools.vscode-docker"
 			],
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
